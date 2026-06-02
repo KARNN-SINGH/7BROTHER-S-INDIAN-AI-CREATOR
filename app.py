@@ -1,16 +1,50 @@
 import streamlit as st
 
-st.title("🎵 7BROTHER'S INDIAN AI CREATOR")
-
-st.write("Welcome to Indian AI Music Creator")
-
-genre = st.selectbox(
-    "Genre Select Karein",
-    ["Rajasthani", "Punjabi", "Haryanvi", "Bhajan"]
+st.set_page_config(
+    page_title="7BROTHER'S INDIAN AI CREATOR",
+    page_icon="🎵",
+    layout="wide"
 )
 
-prompt = st.text_input("Song Idea")
+st.title("🎵 7BROTHER'S INDIAN AI CREATOR")
 
-if st.button("Generate"):
-    st.write("Aapka Genre:", genre)
-    st.write("Prompt:", prompt)
+st.markdown("""
+### 🇮🇳 India's AI Music Platform
+
+Create Rajasthani, Punjabi, Haryanvi and Bhajan Style Music with AI
+""")
+
+st.divider()
+
+genre = st.selectbox(
+    "🎼 Select Genre / शैली चुनें",
+    [
+        "Rajasthani Rasiya",
+        "Punjabi Folk",
+        "Haryanvi",
+        "Bhajan"
+    ]
+)
+
+prompt = st.text_area(
+    "📝 Describe Your Song",
+    placeholder="Example: Romantic Rajasthani Rasiya about village love..."
+)
+
+if st.button("🚀 Generate Song"):
+    st.success(f"Selected Genre: {genre}")
+    st.info(f"Song Idea: {prompt}")
+
+st.divider()
+
+st.markdown("""
+### 🎵 Supported Genres
+
+✅ Rajasthani Rasiya
+
+✅ Punjabi Folk
+
+✅ Haryanvi
+
+✅ Bhajan
+""")
