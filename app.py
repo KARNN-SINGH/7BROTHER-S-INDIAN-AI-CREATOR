@@ -76,9 +76,9 @@ if st.button("🚀 Generate Song"):
 
     st.subheader("🎵 Generated Lyrics")
 
-    if genre == "Rajasthani Rasiya":
+if genre == "Rajasthani Rasiya":
     title = "🎵 Thari Yaadan Ro Geet"
-        lyrics = f"""
+    lyrics = f"""
     म्हारी धरती रो रंग निरालो,
     {prompt}
 
@@ -89,9 +89,9 @@ if st.button("🚀 Generate Song"):
     थारी याद में गीत सुनावूं।
     """
 
-    elif genre == "Punjabi Folk":
+elif genre == "Punjabi Folk":
     title = "🎵 Dil Da Safar"
-        lyrics = f"""
+    lyrics = f"""
     {prompt}
 
     ni tere bina dil lagda nahi,
@@ -101,9 +101,9 @@ if st.button("🚀 Generate Song"):
     tere naal hi meri pehchaan।
     """
 
-    elif genre == "Haryanvi":
+elif genre == "Haryanvi":
     title = "🎵 Gaam Ki Yaad"
-        lyrics = f"""
+    lyrics = f"""
     {prompt}
 
     tere bina dil konya manne,
@@ -113,9 +113,9 @@ if st.button("🚀 Generate Song"):
     dil tera naam bulave se।
     """
 
-    else: # Bhajan
+else:
     title = "🎵 Bhakti Ki Dhun"
-        lyrics = f"""
+    lyrics = f"""
     {prompt}
 
     hey prabhu tera naam pyara,
@@ -124,13 +124,15 @@ if st.button("🚀 Generate Song"):
     bhakti ras mein mann rang jaaye,
     tera gun gaan sab gaaye।
     """
-    st.markdown(f"## {title}")
-    st.write(lyrics)
-    st.download_button(
-        label="⬇️ Download Lyrics",
-        data=lyrics,
-        file_name="7brothers_song.txt",
-        mime="text/plain"
+
+st.markdown(f"## {title}")
+st.write(lyrics)
+
+st.download_button(
+    label="⬇️ Download Lyrics",
+    data=lyrics,
+    file_name="7brothers_song.txt",
+    mime="text/plain"
 )
 
 
