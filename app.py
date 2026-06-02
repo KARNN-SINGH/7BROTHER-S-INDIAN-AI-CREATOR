@@ -34,7 +34,8 @@ h1 {
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 model = genai.GenerativeModel("models/gemini-1.5-flash")
-
+for m in genai.list_models():
+    st.write(m.name)
 st.write("API key loaded:", "GEMINI_API_KEY" in st.secrets)
 
 st.set_page_config(
