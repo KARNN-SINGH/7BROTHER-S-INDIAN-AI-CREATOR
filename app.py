@@ -34,7 +34,7 @@ st.set_page_config(
     page_icon="🎵",
     layout="wide"
 )
-left, center, right = st.columns([1,0,1])
+left, center, right = st.columns([1,100,1])
 
 with center:
     st.image("logo.png", width=250)
