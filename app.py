@@ -84,3 +84,12 @@ st.markdown("""
 
 ✅ Bhajan
 """)
+st.divider()
+
+st.markdown("""
+### 🎵 7BROTHER'S INDIAN AI CREATOR
+
+Made with ❤️ in India
+
+© 2026 7BROTHER'S
+""")
