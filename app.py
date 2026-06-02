@@ -90,7 +90,17 @@ st.divider()
 st.markdown("""
 <div style='text-align: center;'>
 
-### 🎵 7BROTHER'S INDIAN AI CREATOR
+st.divider()
+
+st.markdown("""
+<div style='text-align: center;'>
+
+Made with ❤️ in India 🇮🇳
+
+© 2026–27 7BROTHER'S
+
+</div>
+""", unsafe_allow_html=True)
 
 Made with ❤️ in India
 
