@@ -34,6 +34,9 @@ h1 {
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 model = genai.GenerativeModel("gemini-pro")
+
+st.write("API key loaded:", "GEMINI_API_KEY" in st.secrets)
+
 st.set_page_config(
     page_title="7BROTHER'S INDIAN AI CREATOR",
     page_icon="🎵",
