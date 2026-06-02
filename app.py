@@ -89,7 +89,7 @@ if st.button("🚀 Generate Song"):
     """
 
     elif genre == "Punjabi":
-    lyrics = f"""
+        lyrics = f"""
     {prompt}
 
     ni tere bina dil lagda nahi,
@@ -100,7 +100,7 @@ if st.button("🚀 Generate Song"):
     """
 
     elif genre == "Haryanvi":
-    lyrics = f"""
+        lyrics = f"""
     {prompt}
 
     tere bina dil konya manne,
@@ -111,7 +111,7 @@ if st.button("🚀 Generate Song"):
     """
 
     else: # Bhajan
-    lyrics = f"""
+        lyrics = f"""
     {prompt}
 
     hey prabhu tera naam pyara,
