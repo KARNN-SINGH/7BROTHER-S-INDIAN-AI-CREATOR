@@ -33,7 +33,7 @@ h1 {
 """, unsafe_allow_html=True)
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 st.write("API key loaded:", "GEMINI_API_KEY" in st.secrets)
 
@@ -84,11 +84,14 @@ if st.button("🚀 Generate Song"):
 
     st.subheader("🎵 Generated Lyrics")
     
+try:
     response = model.generate_content(
         f"Write a short {genre} style song about: {prompt}"
     )
-
     st.write(response.text)
+
+except Exception as e:
+    st.error(str(e))
 
     if genre == "Rajasthani Rasiya":
         title = "🎵 Thari Yaadan Ro Geet"
