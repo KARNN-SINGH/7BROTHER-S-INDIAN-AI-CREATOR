@@ -121,8 +121,8 @@ if st.button("🚀 Generate Song"):
     tera gun gaan sab gaaye।
     """
 
-st.write(lyrics)
-st.download_button(
+    st.write(lyrics)
+    st.download_button(
         label="⬇️ Download Lyrics",
         data=lyrics,
         file_name="7brothers_song.txt",
