@@ -77,7 +77,7 @@ if st.button("🚀 Generate Song"):
     st.subheader("🎵 Generated Lyrics")
 
     if genre == "Rajasthani Rasiya":
-      title = "🎵 Thari Yaadan Ro Geet"
+    title = "🎵 Thari Yaadan Ro Geet"
         lyrics = f"""
     म्हारी धरती रो रंग निरालो,
     {prompt}
@@ -90,7 +90,7 @@ if st.button("🚀 Generate Song"):
     """
 
     elif genre == "Punjabi Folk":
-        title = "🎵 Dil Da Safar"
+    title = "🎵 Dil Da Safar"
         lyrics = f"""
     {prompt}
 
@@ -102,7 +102,7 @@ if st.button("🚀 Generate Song"):
     """
 
     elif genre == "Haryanvi":
-        title = "🎵 Gaam Ki Yaad"
+    title = "🎵 Gaam Ki Yaad"
         lyrics = f"""
     {prompt}
 
@@ -114,7 +114,7 @@ if st.button("🚀 Generate Song"):
     """
 
     else: # Bhajan
-         title = "🎵 Bhakti Ki Dhun"
+    title = "🎵 Bhakti Ki Dhun"
         lyrics = f"""
     {prompt}
 
