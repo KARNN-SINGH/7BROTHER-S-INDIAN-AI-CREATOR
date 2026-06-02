@@ -31,6 +31,9 @@ h1 {
 
 </style>
 """, unsafe_allow_html=True)
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+
+model = genai.GenerativeModel("gemini-1.5-flash")
 st.set_page_config(
     page_title="7BROTHER'S INDIAN AI CREATOR",
     page_icon="🎵",
