@@ -81,9 +81,9 @@ if st.button("🚀 Generate Song"):
 
     st.subheader("🎵 Generated Lyrics")
     
-response = model.generate_content(
-    f"Write a short {genre} style song about: {prompt}"
-)
+    response = model.generate_content(
+        f"Write a short {genre} style song about: {prompt}"
+    )
 
 st.write(response.text)
 
