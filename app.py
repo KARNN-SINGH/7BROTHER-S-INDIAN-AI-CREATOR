@@ -32,11 +32,7 @@ h1 {
 </style>
 """, unsafe_allow_html=True)
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-
-model = genai.GenerativeModel("models/gemini-1.5-flash")
-for m in genai.list_models():
-    st.write(m.name)
-st.write("API key loaded:", "GEMINI_API_KEY" in st.secrets)
+model = genai.GenerativeModel("models/gemini-2.5-flash")
 
 st.set_page_config(
     page_title="7BROTHER'S INDIAN AI CREATOR",
