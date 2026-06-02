@@ -73,7 +73,28 @@ prompt = st.text_area(
 
 if st.button("🚀 Generate Song"):
     st.success(f"Selected Genre: {genre}")
-    st.info(f"Song Idea: {prompt}")
+
+    st.subheader("🎵 Generated Lyrics")
+
+    lyrics = f"""
+    [{genre} Song]
+
+    {prompt}
+
+    ये एक डेमो AI गीत है।
+
+    तेरी यादों का मौसम आया,
+    दिल ने फिर तेरा नाम बुलाया।
+
+    सपनों में तेरा चेहरा दिखे,
+    हर धड़कन में तेरा साया।
+
+    ओ साथी मेरे,
+    तू ही मेरी कहानी।
+    """
+
+    st.write(lyrics)
+
 
 st.divider()
 
