@@ -34,9 +34,15 @@ st.set_page_config(
     page_icon="🎵",
     layout="wide"
 )
-col1, col2, col3 = st.columns([1,2,1])
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="logo.png" width="250">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-with col2:
     st.image("logo.png", width=250)
 st.title("🎵 7BROTHER'S INDIAN AI CREATOR")
 st.markdown("""
