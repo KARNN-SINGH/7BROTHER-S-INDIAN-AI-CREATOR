@@ -1,5 +1,20 @@
 import streamlit as st
+st.markdown("""
+<style>
+.stApp {
+    background: linear-gradient(to bottom, #0f0f0f, #1a0033);
+}
 
+h1 {
+    color: #c77dff;
+    text-align: center;
+}
+
+button {
+    border-radius: 10px;
+}
+</style>
+""", unsafe_allow_html=True)
 st.set_page_config(
     page_title="7BROTHER'S INDIAN AI CREATOR",
     page_icon="🎵",
