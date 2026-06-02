@@ -43,7 +43,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-    st.image("logo.png", width=250)
 st.title("🎵 7BROTHER'S INDIAN AI CREATOR")
 st.markdown("""
 ## 🚀 Create Indian Folk Music with AI
