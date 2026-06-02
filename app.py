@@ -36,6 +36,13 @@ st.set_page_config(
 )
 
 st.title("🎵 7BROTHER'S INDIAN AI CREATOR")
+st.markdown("""
+## 🚀 Create Indian Folk Music with AI
+
+### 🎵 Rajasthani • Punjabi • Haryanvi • Bhajan
+
+India's AI-Powered Music Creation Platform
+""")
 
 st.markdown("""
 ### 🇮🇳 India's AI Music Platform
