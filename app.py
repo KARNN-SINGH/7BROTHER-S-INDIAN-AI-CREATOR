@@ -85,7 +85,7 @@ if st.button("🚀 Generate Song"):
         f"Write a short {genre} style song about: {prompt}"
     )
 
-st.write(response.text)
+    st.write(response.text)
 
     if genre == "Rajasthani Rasiya":
         title = "🎵 Thari Yaadan Ro Geet"
