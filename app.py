@@ -76,21 +76,49 @@ if st.button("🚀 Generate Song"):
 
     st.subheader("🎵 Generated Lyrics")
 
+    if genre == "Rajasthani":
     lyrics = f"""
-    [{genre} Song]
-
+    म्हारी धरती रो रंग निरालो,
     {prompt}
 
-    ये एक डेमो AI गीत है।
+    रेत रा धोरां में थारी याद आवे,
+    दिल रो पंछी थारो नाम गावै।
 
-    तेरी यादों का मौसम आया,
-    दिल ने फिर तेरा नाम बुलाया।
+    चांदणी रातां में सपनां सजावूं,
+    थारी याद में गीत सुनावूं।
+    """
 
-    सपनों में तेरा चेहरा दिखे,
-    हर धड़कन में तेरा साया।
+elif genre == "Punjabi":
+    lyrics = f"""
+    {prompt}
 
-    ओ साथी मेरे,
-    तू ही मेरी कहानी।
+    ni tere bina dil lagda nahi,
+    tere naam di dhun vajdi rahi।
+
+    sajna ve tu meri jaan,
+    tere naal hi meri pehchaan।
+    """
+
+elif genre == "Haryanvi":
+    lyrics = f"""
+    {prompt}
+
+    tere bina dil konya manne,
+    yaad teri roj satave se।
+
+    gaam ki galiyan yaad karave,
+    dil tera naam bulave se।
+    """
+
+else: # Bhajan
+    lyrics = f"""
+    {prompt}
+
+    hey prabhu tera naam pyara,
+    tu hi jag ka sahara।
+
+    bhakti ras mein mann rang jaaye,
+    tera gun gaan sab gaaye।
     """
 
     st.write(lyrics)
