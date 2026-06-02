@@ -76,7 +76,7 @@ if st.button("🚀 Generate Song"):
 
     st.subheader("🎵 Generated Lyrics")
 
-        if genre == "Rajasthani":
+    if genre == "Rajasthani":
     lyrics = f"""
     म्हारी धरती रो रंग निरालो,
     {prompt}
