@@ -82,53 +82,53 @@ if st.button("🚀 Generate Song"):
     st.subheader("🎵 Generated Lyrics")
 
     if genre == "Rajasthani Rasiya":
-    title = "🎵 Thari Yaadan Ro Geet"
-    lyrics = f"""
-    म्हारी धरती रो रंग निरालो,
-    {prompt}
+        title = "🎵 Thari Yaadan Ro Geet"
+        lyrics = f"""
+        म्हारी धरती रो रंग निरालो,
+        {prompt}
 
-    रेत रा धोरां में थारी याद आवे,
-    दिल रो पंछी थारो नाम गावै।
+        रेत रा धोरां में थारी याद आवे,
+        दिल रो पंछी थारो नाम गावै।
 
-    चांदणी रातां में सपनां सजावूं,
-    थारी याद में गीत सुनावूं।
-    """
+        चांदणी रातां में सपनां सजावूं,
+        थारी याद में गीत सुनावूं।
+        """
 
     elif genre == "Punjabi Folk":
-    title = "🎵 Dil Da Safar"
-    lyrics = f"""
-    {prompt}
+        title = "🎵 Dil Da Safar"
+        lyrics = f"""
+        {prompt}
 
-    ni tere bina dil lagda nahi,
-    tere naam di dhun vajdi rahi।
+        ni tere bina dil lagda nahi,
+        tere naam di dhun vajdi rahi।
 
-    sajna ve tu meri jaan,
-    tere naal hi meri pehchaan।
-    """
+        sajna ve tu meri jaan,
+        tere naal hi meri pehchaan।
+        """
 
     elif genre == "Haryanvi":
-    title = "🎵 Gaam Ki Yaad"
-    lyrics = f"""
-    {prompt}
+        title = "🎵 Gaam Ki Yaad"
+        lyrics = f"""
+        {prompt}
 
-    tere bina dil konya manne,
-    yaad teri roj satave se।
+        tere bina dil konya manne,
+        yaad teri roj satave se।
 
-    gaam ki galiyan yaad karave,
-    dil tera naam bulave se।
-    """
+        gaam ki galiyan yaad karave,
+        dil tera naam bulave se।
+        """
 
     else:
-    title = "🎵 Bhakti Ki Dhun"
-    lyrics = f"""
-    {prompt}
+        title = "🎵 Bhakti Ki Dhun"
+        lyrics = f"""
+        {prompt}
 
-    hey prabhu tera naam pyara,
-    tu hi jag ka sahara।
+        hey prabhu tera naam pyara,
+        tu hi jag ka sahara।
 
-    bhakti ras mein mann rang jaaye,
-    tera gun gaan sab gaaye।
-    """
+        bhakti ras mein mann rang jaaye,
+        tera gun gaan sab gaaye।
+        """
 
     st.markdown(f"## {title}")
     st.write(lyrics)
