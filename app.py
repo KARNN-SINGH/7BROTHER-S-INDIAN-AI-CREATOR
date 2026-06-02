@@ -9,10 +9,24 @@ h1 {
     color: #c77dff;
     text-align: center;
 }
-
-button {
+.stButton > button {
+    background-color: #8a2be2;
+    color: white;
     border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
 }
+
+.stButton > button:hover {
+    background-color: #a855f7;
+}
+
+.stButton > button:active {
+    background-color: #6a0dad;
+}
+
+
 </style>
 """, unsafe_allow_html=True)
 st.set_page_config(
