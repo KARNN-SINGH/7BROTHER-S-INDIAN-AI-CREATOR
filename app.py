@@ -80,6 +80,12 @@ if st.button("🚀 Generate Song"):
     st.success(f"Selected Genre: {genre}")
 
     st.subheader("🎵 Generated Lyrics")
+    
+response = model.generate_content(
+    f"Write a short {genre} style song about: {prompt}"
+)
+
+st.write(response.text)
 
     if genre == "Rajasthani Rasiya":
         title = "🎵 Thari Yaadan Ro Geet"
