@@ -85,11 +85,16 @@ st.markdown("""
 ✅ Bhajan
 """)
 st.divider()
+st.divider()
 
 st.markdown("""
+<div style='text-align: center;'>
+
 ### 🎵 7BROTHER'S INDIAN AI CREATOR
 
 Made with ❤️ in India
 
-© 2026 7BROTHER'S
-""")
+© 2026–27 7BROTHER'S
+
+</div>
+""", unsafe_allow_html=True)
